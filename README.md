@@ -1,7 +1,7 @@
 # risk-repo
 
 
-This repository serves as the risk registry for our data team. It is a place to document, track, and discuss risks related to our projects.
+This repository serves as the risk registry for our data team. It is a place to document, track, and discuss risks related to our products, infrastructure, and team health.
 
 ## Purpose
 
