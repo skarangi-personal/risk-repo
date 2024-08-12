@@ -13,7 +13,7 @@ This repository serves as the risk registry for our data team. It is a place to 
 
 1. Go to the `Issues` tab.
 2. Click `New issue`.
-3. Select the `risk-repo` template.
+3. Select the `Risk Registry` template.
 4. Fill out the template with details about the risk.
 5. Submit the issue.
 
