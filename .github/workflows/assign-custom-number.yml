@@ -11,12 +11,15 @@ jobs:
     - name: Assign custom number
       uses: actions/github-script@v5
       with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
         script: |
           const issueNumber = context.issue.number;
           const prefix = `RISK-${String(issueNumber).padStart(3, '0')}`;
           const issueTitle = `[${prefix}] ${context.payload.issue.title}`;
           
-          github.rest.issues.update({
-            ...context.issue,
+          await github.rest.issues.update({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: issueNumber,
             title: issueTitle
           });
